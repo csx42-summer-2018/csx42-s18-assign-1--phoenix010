@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/aditya_tyagi_assign1/src/myArrayList/driver/Driver.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="myArrayList.driver.Driver"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="aditya_tyagi_assign1"/>
+</launchConfiguration>

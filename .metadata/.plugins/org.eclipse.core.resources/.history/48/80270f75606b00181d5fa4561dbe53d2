@@ -1,0 +1,19 @@
+package myArrayList.driver;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+public class Driver {
+	public static void main(String[] args) throws IOException
+    {
+		
+		System.out.println("Heelo");
+    }
+}
+
+//Scanner input = new Scanner(new File("word.txt"));          
+//String in = "";         
+//in = input.nextLine();  
