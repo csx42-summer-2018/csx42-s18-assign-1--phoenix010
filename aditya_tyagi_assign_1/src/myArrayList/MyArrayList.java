@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import myArrayList.util.Fileprocessor;
 public class MyArrayList {
+	private static Scanner scanner = new Scanner(System.in);
 	private static int [] data ;
 	private static String str;
 	
@@ -22,7 +23,7 @@ public static void main(String args[]) throws IOException {
 	
 	data = stringArrayToIntArray(str);
 //	System.out.println("Aditya");
-	System.out.println(Arrays.toString(data));
+//System.out.println(Arrays.toString(data));
 
 	int size = data.length;
 	if(size >= 50) {
@@ -31,6 +32,14 @@ public static void main(String args[]) throws IOException {
 	}
 	else
 		insertSorted(data); 
+	
+	int result = sum();
+	System.out.println(result);
+	System.out.println("Eneter the element you want to search: ");
+	int element = scanner.nextInt();
+	//indexOf(element);
+	int index = find( element);
+	System.out.println("Index position of: "+element+ " is: "+index);
 		
 	}
 public static int[] stringArrayToIntArray(String str) {
@@ -83,7 +92,38 @@ catch(NumberFormatException e) {
 		}
 		return arr2;
 	}
+	public static void removeAllOccurence() {
+		boolean flag = true;
+		while(flag) {
+			for(int i=0; i< data.length; i++) {
+				
+					
+				}
+			}
+		}
+	public static int sum() {
+		int sum =0;
+		System.out.println("Sum of all ELements: ");
+		for(int i=0; i< data.length; i++) {
+			sum = sum +data[i];
+			}
+		return sum;
+	}
 	
+	public static int indexOf(int element) {
+		System.out.println("*******");
+//		
+			
+	}
+	
+	public static<T> int find( T target)
+	{
+		for (int i = 0; i < data.length; i++)
+			if (target.equals(data[i]))
+				return i;
+
+		return -1;
+	}
 	public static void printArray(int[] arr) {
 		System.out.println(Arrays.toString(arr));
 	}
