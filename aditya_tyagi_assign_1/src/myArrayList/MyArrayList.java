@@ -1,12 +1,29 @@
 package myArrayList;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
+
+import myArrayList.util.Fileprocessor;
 public class MyArrayList {
-public static void main(String args[]) {
-	 int [] data = readFiles("file.txt");
-	//System.out.println(Arrays.toString(data));
+	private static int [] data ;
+	private static String str;
+	
+public MyArrayList(String str) {
+		super();
+		this.data = new int[50];
+		this.str = str;
+	}
+public static void main(String args[]) throws IOException {
+	Fileprocessor fileprocessor = new Fileprocessor();
+	str = fileprocessor.readLine("file");
+	//System.out.println(str);
+	
+	data = stringArrayToIntArray(str);
+//	System.out.println("Aditya");
+	System.out.println(Arrays.toString(data));
+
 	int size = data.length;
 	if(size >= 50) {
 		size = size*2;
@@ -15,32 +32,23 @@ public static void main(String args[]) {
 	else
 		insertSorted(data); 
 		
+	}
+public static int[] stringArrayToIntArray(String str) {
+    String[] intStringSplit = str.split("\n"); //Split by spaces
+    int[] result = new int[intStringSplit.length]; //Used to store our ints
+try {
+    for (int i = 0; i < intStringSplit.length; i++) {
+        //parse and store each value into int[] to be returned
+        result[i] = Integer.parseInt(intStringSplit[i]); 
+    }
+    return result;
 }
-	public static int[] readFiles(String file) {
-	try {
-			File f = new File(file);
-			Scanner s = new Scanner(f);
-			int ctrl = 0;
-			while(s.hasNextInt()) {
-				ctrl++;
-				s.nextInt();
-		}
-		s.close();
-	
-			
-			int[] arr =new int[ctrl];
-			Scanner s1 = new Scanner(f);
-			for(int i=0; i< arr.length; i++)
-				arr[i]= s1.nextInt();
-			
-		return arr;
-			
-			}
-		catch(Exception e) {
-			return null;
-	}
-		
-	}
+catch(NumberFormatException e) {
+	System.out.println("Please deleate the space or new line at the start of the input file");
+	return null;
+}
+}
+
 	public static void newArray(int[] arr, int size) {			// if size of array gets more than 50
 		
 		int [] newArr = Arrays.copyOf(arr, size);

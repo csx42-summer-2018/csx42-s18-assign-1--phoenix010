@@ -1,19 +1,18 @@
 package myArrayList.util;
 
-import java.io.File;
-import java.util.Scanner;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class Fileprocessor {
-	public void readLine(String file) throws Exception {
-		// pass the path to the file as a parameter
-		
-		// Reference: "https://www.geeksforgeeks.org/different-ways-reading-text-file-java/"
-	    File file1= new File("file.txt");
-	    Scanner sc = new Scanner(file1);
-	 
-	    while (sc.hasNextLine())
-	      System.out.println(sc.nextLine());
-	    sc.close();
-		}
-	
+	public static String readLine(String file) throws IOException  {
+
+		//Refernece "https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file"
+//		System.out.println("LOL");
+		String content = new String(Files.readAllBytes(Paths.get("file")));
+//		System.out.println("Aditya");
+		return content;
+	}
+
 }
