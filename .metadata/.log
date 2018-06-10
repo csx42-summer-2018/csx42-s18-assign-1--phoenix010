@@ -59,3 +59,13 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 
 !ENTRY org.eclipse.core.resources 4 567 2018-06-08 23:48:19.644
 !MESSAGE The project description file (.project) for 'aditya_tyagi_assign1' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2018-06-09 01:24:21.998 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=10.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 4 567 2018-06-09 01:24:54.972
+!MESSAGE The project description file (.project) for 'aditya_tyagi_assign1' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
