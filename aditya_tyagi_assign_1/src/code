@@ -80,4 +80,59 @@ public static void main(String args[]) {
 		System.out.println(Arrays.toString(arr));
 	}
 
+public static int indexOf(int element) {
+//		 ArrayList<Integer> list = convertIntArrayToArrayList(data);
+//		 System.out.println(list);
+//		 if(list.contains(element)) {
+//			 return list.indexOf(element);
+//			}
+//		 else
+//			 return -1;
+		for (int i = 0; i < data.length; i++)
+			if (data[i] == element) {
+				return i;
+				
+			}
+		return -1;
+	}
+	private static List<Integer> convertIntArrayToList(int[] input) {
+
+        List<Integer> list = new ArrayList<>();
+        for (int i : input) {
+            list.add(i);
+        }
+        return list;
+
+    }
+    public static void removeAllOccurences( int element) {
+
+	    int j = 0;
+	    int k = 0;
+
+	    for (int i =0;i<data.length;i++){
+	        if (data[i]==element){
+	            j++;
+	        }
+	    }
+	    
+	    System.out.println("j value is: "+j);
+	    int x= data.length-j;
+	    
+	    System.out.println("New Array len is: "+x);
+	    
+	    int[] newArray = new int[x];
+	   
+	    int[] newArray1 = new int[x];
+
+	    for (int i =0;i<x;i++){
+	        if(data[i]!=element){
+	            newArray[k]=data[i];
+	            k++; 
+	        }
+	    }										/*1,1,2,1,22,2,1*/
+	   
+//	   newArray1 = sortedArray(newArray);
+	   System.out.println(Arrays.toString(newArray));
+	   
+	}
 }
