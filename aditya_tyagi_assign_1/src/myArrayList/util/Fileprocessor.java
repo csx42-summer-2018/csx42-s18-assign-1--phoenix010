@@ -12,7 +12,5 @@ public class Fileprocessor {
 
 		String content = new String(Files.readAllBytes(Paths.get("file")));
 		return content;
-		
 	}
-	
 }

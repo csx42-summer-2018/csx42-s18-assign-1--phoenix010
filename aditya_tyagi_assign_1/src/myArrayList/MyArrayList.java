@@ -12,39 +12,15 @@ import myArrayList.util.Fileprocessor;
 
 public class MyArrayList {
 private static Scanner scanner = new Scanner(System.in);
+private int[] arr =new int[50];
+int ctr;
 
-public static void main(String args[]) throws IOException {
-	
-Fileprocessor fileprocessor = new Fileprocessor();
-	int [] data = new int[50]; 
-	MyArrayList myArrayList = new MyArrayList();
-	String str = fileprocessor.readLine("file");
-	int size = 2*str.length();
-	//System.out.println(str.length());
-	if(str.length() >= 50) {
-		int[] data_1= new int[size];
-		data_1 = stringArrayToIntArray(str);
-		data_1 = insertSorted(data_1, size);
-		System.out.println("Size of the array is: "+sizeArr(data_1));
-		System.out.println("Sum of all elements of Array: "+sumArr(data_1));
-		System.out.println("ENeter the element to find index:");
-		int item = scanner.nextInt();
-		scanner.nextLine();
-		int ctr = indexOf(data_1, item);
-		if(ctr == -1)
-			System.out.println("Item not in Array");
-		else
-			System.out.println("Index of Item is: "+ctr);
-		removeAllOccurences(data_1,2);
-	}
-		
-			
-	
-	else {
-		data = stringArrayToIntArray(str);
-	}
-	
+public MyArrayList() {
+	this.arr = arr;
+	this.ctr = ctr;
 }
+
+
 public static int[] stringArrayToIntArray(String str) {
     String[] intStringSplit = str.split("\n"); //Split by spaces
     int[] result = new int[intStringSplit.length]; //Used to store our ints
@@ -116,8 +92,11 @@ catch(NumberFormatException e) {
 		}
 		return -1;
 	}
-	public static void removeAllOccurences(int[] input, int number) {
-
+	public static int[] removeAllOccurences(int[] input) {
+		System.out.println("Eneter the item you want to remove: ");
+		int number = scanner.nextInt();
+		int count = indexOf(input, number);
+		if(count > -1) {
 		List<Integer> result = new LinkedList<Integer>(); 
 		for (int item : input) { 
 			if (item != number) { 
@@ -126,6 +105,17 @@ catch(NumberFormatException e) {
 			} 
 		Integer[] scores = result.toArray(new Integer[result.size()]);
 		System.out.println(Arrays.toString(scores));
+		
+		int[] data = new int[result.size()];
+		for(int i =0; i< result.size() ; i++) {
+			data[i] = result.get(i);
+		}
+		return data;
+		}
+		else {
+			System.out.println("THe item which you are trying to deleate is not in the arraylist");
+		return input;
+		}
 }
 	
 	
