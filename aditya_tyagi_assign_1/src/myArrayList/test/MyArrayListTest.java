@@ -19,11 +19,9 @@ public class MyArrayListTest {
 	 * fails, then its calling the storeNewResult() defined in the Result.We have
 	 * initialized an array for our test cases within this method
 	 * 
-	 * @param myArrayList.
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param myArrayList. myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
-	 * @param result.
-	 *            Its an object of Results. It's required to call storeNewResult()
+	 * @param result.result is an object of Results. It's required to call storeNewResult()
 	 *            method defined in class Result.
 	 */
 	public void testMe(MyArrayList myArrayList, Results result) {
@@ -103,10 +101,8 @@ public class MyArrayListTest {
 	 * After insertion, we will calculate the sum after insertion.Based on some
 	 * logic, its going to return either 1 or 0 to the calling function
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList.
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data. data is the array defined in the testMe() method
+	 * @param myArrayList.myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return return either 1 or 0
 	 */
@@ -133,10 +129,8 @@ public class MyArrayListTest {
 	 * the size of array is calculated. Based on defined conditions it's either
 	 * going to return 1 or 0.
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data. data is the array defined in the testMe() method
+	 * @param myArrayList:myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */
@@ -163,10 +157,8 @@ public class MyArrayListTest {
 	 * array.Again, we will calculate the sum of this array. Then based on defined
 	 * logic method returns 1 0r 0
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList: myArrayList is an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */
@@ -195,10 +187,8 @@ public class MyArrayListTest {
 	 * removes 49. Again, the method check the size of the array.Based on defined
 	 * conditions, method either returns 1 or 0
 	 *
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList:myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */
@@ -223,10 +213,8 @@ public class MyArrayListTest {
 	 * values of array. Then, it removes 1 from the array and then calculates the
 	 * sum of the array. Based on defined conditions, method either returns 1 or -1.
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList: myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or -1
 	 */
@@ -252,10 +240,8 @@ public class MyArrayListTest {
 	 * occurences of 20 in the array. Based on defined conditions, method either
 	 * returns -1 or 1.
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList:myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or -1
 	 */
@@ -282,10 +268,8 @@ public class MyArrayListTest {
 	 * position of 20. Then it is going to insert another 20. Based on defined
 	 * conditions, method either returns 1 or 0
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data. data is the array defined in the testMe() method
+	 * @param myArrayList: myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */
@@ -310,10 +294,8 @@ public class MyArrayListTest {
 	 * first prints the array. Then, it is going to insert 0 in the array. Based om
 	 * defined conditions, method returns 1
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList:myArrayList an object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */
@@ -332,10 +314,8 @@ public class MyArrayListTest {
 	 * Method checks the removeAllOccurences functionality. It deletes the last
 	 * element of the array.
 	 * 
-	 * @param data.
-	 *            This is the array defined in the testMe() method
-	 * @param myArrayList:
-	 *            Its an object of MyArrayList. It's required to call methods
+	 * @param data.data is the array defined in the testMe() method
+	 * @param myArrayList:myArrayListan object of MyArrayList. It's required to call methods
 	 *            defined in class MyArrayList.
 	 * @return: return either 1 or 0
 	 */

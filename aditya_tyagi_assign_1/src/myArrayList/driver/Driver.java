@@ -53,10 +53,8 @@ public class Driver {
 	 * primitive integer type array and the size of array too. Later, its going to
 	 * print the sum of all values in an output file (which will be generated).
 	 * 
-	 * @param str.
-	 *            Str is a String which is passed as an input.
-	 * @param strLen.
-	 *            strLen is the length of string
+	 * @param str.Str is a String which is passed as an input.
+	 * @param strLen. strLen is the length of string
 	 * @throws NullPointerException.
 	 */
 	public static void runCode(String str, int strLen)
@@ -109,8 +107,7 @@ public class Driver {
 	 * Method calls the writeToStdout() of Results class.Then its going to call
 	 * testMe() which is defined in the MyArrayListTest class
 	 * 
-	 * @param str1
-	 *            : str1 is the sum of all values in the array. Its typecasted
+	 * @param str1: str1 is the sum of all values in the array. Its typecasted
 	 *            earlier into String
 	 */
 	public static void resultCall(String str1) {

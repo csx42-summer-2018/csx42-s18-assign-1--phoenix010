@@ -11,8 +11,16 @@
     <fullyQualifiedTypeName name="myArrayList.util.Fileprocessor"/>
     <fullyQualifiedTypeName name="myArrayList.util.FileDisplayInterface"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="myArrayList.util.Result"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="myArrayList.util.StdoutDisplayInterface"/>
+    <fullyQualifiedTypeName name="java.io.PrintStream"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.nio.file.NoSuchFileException"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="myArrayList.util.Result"/>
     <fullyQualifiedTypeName name="myArrayList.MyArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="myArrayList.test.MyArrayListTest"/>
+    <fullyQualifiedTypeName name="javax.xml.bind.SchemaOutputResolver"/>
+    <fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
 </qualifiedTypeNameHistroy>
