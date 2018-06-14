@@ -43,11 +43,13 @@ catch(NumberFormatException e) {
 	public static int[] insertSorted(int[] data, int strLen) {		//insertion of a new value and then insertion will happen
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("print the value which you want to insert");
-		int size = data.length ;
+		int size = data.length+1 ;
+//		System.out.println(data.length);
+//		System.out.println(strLen);
 		int value = scanner.nextInt();
 		scanner.nextLine();
-		int [] newArr = Arrays.copyOf(data, data.length);
-		newArr[data.length-1]= value;
+		int [] newArr = Arrays.copyOf(data, size);
+		newArr[size-1]= value;
 		System.out.println(Arrays.toString(newArr));
 		newArr = sortedArray(newArr);
 		System.out.println(Arrays.toString(newArr));

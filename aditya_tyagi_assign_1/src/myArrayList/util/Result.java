@@ -14,7 +14,7 @@ public class Result implements StdoutDisplayInterface, FileDisplayInterface  {
 		System.out.println("The Sum of all elements in the array list is:  "+s );
 		
 	}
-	
+	//Reference: https://www.youtube.com/watch?v=72BEuCPMgTo
 	public  void writeToFile(String s) {
 		try {
 			PrintStream myconsole = new PrintStream(new File("output_file"));
