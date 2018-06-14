@@ -40,7 +40,7 @@ catch(NumberFormatException e) {
 		return data.length;
 	}
         
-	public static int[] insertSorted(int[] data, int strLen) {		//insertion of a new value and then insertion will happen
+	public static int[] insertSorted(int[] data) {		//insertion of a new value and then insertion will happen
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("print the value which you want to insert");
 		int size = data.length+1 ;
